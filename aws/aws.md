@@ -1,6 +1,7 @@
 #### Services:
 * `EC2` (Elastic Compute Cloud) - Virtual servers
-* `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
+    * `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
+    * `EBC` (Elastic Block Store) - Storage for EC2
 * `S3` (Simple Storage Service) - File storage
 * `Route 53` - DNS + Domains
 * `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
