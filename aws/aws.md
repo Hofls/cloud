@@ -1,7 +1,12 @@
-#### Services:
+## Services:
+#### Compute
 * `EC2` (Elastic Compute Cloud) - Virtual servers
     * `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
     * `EBC` (Elastic Block Store) - Storage for EC2
+    * `AMI` (Amazon Machine Images) - OS + installed software
+* `Lightsail` - Servers with sane defaults, fixed price per month
+* `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
+#### Etc
 * `S3` (Simple Storage Service) - File storage
 * `Route 53` - DNS + Domains
 * `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
@@ -9,14 +14,15 @@
 * `CloudFormation` - Infrastructure as Code
 * `CloudWatch` - Application and Infrastructure Monitoring (Logs, Metrics, Alarms, Dashboards, KPIs)
 * `IAM` (Identity and Access Management) - Users, groups, permissions
-* `ELM` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
+* `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
 * `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
 * `Trusted Advisor` - scans AWS infrastructure, compares it to best practices, and provides recommendations
 * `CloudFront` - CDN (Content Delivery Network)
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
+* `Honeycode` - create apps without programming
 
-#### The Five Pillars:
+## The Five Pillars:
 * `Operational Excellence` - continuously improve your ability to run systems, create better procedures, and gain insights
     * Based on automation, because human error is the primary cause of incidents
     * `IaC` (Infrastructure as Code) - infrastructure management via configuration files
