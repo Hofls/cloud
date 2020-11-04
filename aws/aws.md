@@ -4,22 +4,34 @@
     * `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
     * `EBC` (Elastic Block Store) - Storage for EC2
     * `AMI` (Amazon Machine Images) - OS + installed software
-* `Lightsail` - Servers with sane defaults, fixed price per month
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
-#### Etc
-* `S3` (Simple Storage Service) - File storage
-* `Route 53` - DNS + Domains
 * `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
-* `DynamoDB` - Key-value storage
+* `Amplify` - hosting for fullstack SPA with CI/CD
+* `Lightsail` - Servers with sane defaults, fixed price per month
+#### Storage
+* `S3` (Simple Storage Service) - File storage
+* `RDS` (Relational Database Service) - alternative to Postgres/MySQL
+* `DynamoDB` - Key-value storage (NoSQL)
+* `Elasticache` - in-memory data store (Memcached/Redis)
+* `SQS` (Simple Queue Service) - Message queue (RabbitMQ)
+#### Devops
 * `CloudFormation` - Infrastructure as Code
 * `CloudWatch` - Application and Infrastructure Monitoring (Logs, Metrics, Alarms, Dashboards, KPIs)
-* `IAM` (Identity and Access Management) - Users, groups, permissions
-* `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
-* `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
-* `Trusted Advisor` - scans AWS infrastructure, compares it to best practices, and provides recommendations
+* `CodeCommit` - hosted version control (github/gitlab)
+* `CodeDeploy` - deploy code from git to `EC2` instances
+* `CodePipeline` - CI/CD (CircleCI, Travis)
+#### Networking
+* `Route 53` - DNS + Domains
 * `CloudFront` - CDN (Content Delivery Network)
+* `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
+* `Amazon API Gateway` - versioning and routing, rate limiting, API keys
+#### Analytics
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
+* `Trusted Advisor` - scans AWS infrastructure, compares it to best practices, and provides recommendations
+#### Etc
+* `IAM` (Identity and Access Management) - Users, groups, permissions
+* `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
 * `Honeycode` - create apps without programming
 
 ## The Five Pillars:
