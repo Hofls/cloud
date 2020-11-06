@@ -1,4 +1,7 @@
-### Main features:
+### Use cases
+* Server with installed OS, most generic solution. When no other AWS service fits your needs.
+
+### Features:
 * `Security group` - make port accessible to entire internet (e.g. 80)
 * `EC2 Instance connect` - connect to instance via SSH in a browser (alternative to PuTTy)
     * Looks like it is working only with specific instances (Amazon Linux 2 AMI)
