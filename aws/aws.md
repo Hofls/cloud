@@ -24,7 +24,7 @@
 * `Route 53` - DNS + Domains
 * `CloudFront` - CDN (Content Delivery Network)
 * `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
-* `Amazon API Gateway` - versioning and routing, rate limiting, API keys
+* `API Gateway` - versioning and routing, rate limiting, API keys
 #### Analytics
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
