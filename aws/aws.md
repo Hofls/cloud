@@ -29,8 +29,10 @@
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
 * `Trusted Advisor` - scans AWS infrastructure, compares it to best practices, and provides recommendations
+### Security, identity
+* `IAM` (Identity and Access Management) - AWS Account management (users, groups, permissions)
+* `Cognito` - Add Sign-up/Sign-in functionality to the app
 #### Etc
-* `IAM` (Identity and Access Management) - Users, groups, permissions
 * `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
 * `Honeycode` - create apps without programming
 
