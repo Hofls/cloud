@@ -7,11 +7,15 @@
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
 * `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
 * `Amplify` - hosting for fullstack SPA with CI/CD
+* `ECS` (Elastic Container Service) - containers orchestration (alternative to kubernetes)
+    * `Fargate` - Serverless compute for containers
 * `Lightsail` - Servers with sane defaults, fixed price per month
 #### Storage
 * `S3` (Simple Storage Service) - File storage
-* `RDS` (Relational Database Service) - alternative to Postgres/MySQL
+* `RDS` (Relational Database Service) - Set up, operate, and scale a relational database (Postgres/MySQL)
+    * `Aurora` - more expensive and complex alternative to `RDS`
 * `DynamoDB` - Key-value storage (NoSQL)
+    * `DocumentDB` - same thing, but with more complexity/control
 * `Elasticache` - in-memory data store (Memcached/Redis)
 * `SQS` (Simple Queue Service) - Message queue (RabbitMQ)
 #### Devops
@@ -25,6 +29,7 @@
 * `CloudFront` - CDN (Content Delivery Network)
 * `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
 * `API Gateway` - versioning and routing, rate limiting, API keys
+* `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
 #### Analytics
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
@@ -33,8 +38,8 @@
 * `IAM` (Identity and Access Management) - AWS Account management (users, groups, permissions)
 * `Cognito` - Add Sign-up/Sign-in functionality to the app
 #### Etc
-* `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
-* `Honeycode` - create apps without programming
+* `Cloud9` - Online IDE
+* `Honeycode` - Create apps without programming
 
 ## The Five Pillars:
 * `Operational Excellence` - continuously improve your ability to run systems, create better procedures, and gain insights
