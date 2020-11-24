@@ -19,7 +19,11 @@
 * `Elasticache` - in-memory data store (Memcached/Redis)
 * `SQS` (Simple Queue Service) - Message queue (RabbitMQ)
 #### Devops
-* `CloudFormation` - Infrastructure as Code
+* `CloudFormation` - Infrastructure as Code (declarative, high level of abstraction)
+    * Alternatives:
+        * `CDK` (Cloud Development Kit) - abstraction on top of CloudFormation
+        * `CLI` - imperative, low level of abstraction
+        * `Terraform`
 * `CloudWatch` - Application and Infrastructure Monitoring (Logs, Metrics, Alarms, Dashboards, KPIs)
 * `CodeCommit` - hosted version control (github/gitlab)
 * `CodeDeploy` - deploy code from git to `EC2` instances
@@ -37,9 +41,14 @@
 ### Security, identity
 * `IAM` (Identity and Access Management) - AWS Account management (users, groups, permissions)
 * `Cognito` - Add Sign-up/Sign-in functionality to the app
+### Cost management
+* `Budgets` - Before costs incurred. Alerts, limits, forecasting
+* `Cost Explorer` - After costs incurred. Reports, visualization
 #### Etc
 * `Cloud9` - Online IDE
 * `Honeycode` - Create apps without programming
+* `Marketplace` - pre-packaged images with installed software (e.g. SonarQube, Grafana)
+* `SDK` - Access AWS services from your app (e.g. write data to DynamoDB)
 
 ## The Five Pillars:
 * `Operational Excellence` - continuously improve your ability to run systems, create better procedures, and gain insights
