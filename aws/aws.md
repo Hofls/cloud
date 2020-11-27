@@ -4,6 +4,7 @@
     * `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
     * `EBC` (Elastic Block Store) - Storage for EC2
     * `AMI` (Amazon Machine Images) - OS + installed software
+    * `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
 * `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
 * `Amplify` - hosting for fullstack SPA with CI/CD
@@ -13,7 +14,6 @@
 #### Storage
 * `S3` (Simple Storage Service) - File storage
 * `RDS` (Relational Database Service) - Set up, operate, and scale a relational database (Postgres/MySQL)
-    * `Aurora` - more expensive and complex alternative to `RDS`
 * `DynamoDB` - Key-value storage (NoSQL)
     * `DocumentDB` - same thing, but with more complexity/control
 * `Elasticache` - in-memory data store (Memcached/Redis)
@@ -33,7 +33,6 @@
 * `CloudFront` - CDN (Content Delivery Network)
 * `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
 * `API Gateway` - versioning and routing, rate limiting, API keys
-* `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
 #### Analytics
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
