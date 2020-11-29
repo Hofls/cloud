@@ -14,16 +14,21 @@
 #### Storage
 * `S3` (Simple Storage Service) - File storage
 * `RDS` (Relational Database Service) - Set up, operate, and scale a relational database (Postgres/MySQL)
+    * `Aurora` - fully managed alternative (you don't have to admin it)
+    * `Aurora Serverless` - only runs when you need it, like Lambda (for bursty workloads that spike frequently)
 * `DynamoDB` - Key-value storage (NoSQL)
     * `DocumentDB` - same thing, but with more complexity/control
 * `Elasticache` - in-memory data store (Memcached/Redis)
 * `SQS` (Simple Queue Service) - Message queue (RabbitMQ)
 #### Devops
 * `CloudFormation` - Infrastructure as Code (declarative, high level of abstraction)
+    * `Quick Starts` - gold-standard deployment templates
     * Alternatives:
         * `CDK` (Cloud Development Kit) - abstraction on top of CloudFormation
         * `CLI` - imperative, low level of abstraction
         * `Terraform`
+* `OpsWorks` - use code to automate the configurations of your `EC2` servers (via Chef/Puppet)
+* `Marketplace` - pre-packaged images with installed software (e.g. SonarQube, Grafana)
 * `CloudWatch` - Application and Infrastructure Monitoring (Logs, Metrics, Alarms, Dashboards, KPIs)
 * `CodeCommit` - hosted version control (github/gitlab)
 * `CodeDeploy` - deploy code from git to `EC2` instances
@@ -43,10 +48,11 @@
 ### Cost management
 * `Budgets` - Before costs incurred. Alerts, limits, forecasting
 * `Cost Explorer` - After costs incurred. Reports, visualization
-#### Etc
+* `Pricing Calculator` - Estimate the cost for your architecture solution
+* `Resource Groups` - check all your resources (EC2 instances, Lambda functions, DynamoDB tables etc)
+#### Development
 * `Cloud9` - Online IDE
 * `Honeycode` - Create apps without programming
-* `Marketplace` - pre-packaged images with installed software (e.g. SonarQube, Grafana)
 * `SDK` - Access AWS services from your app (e.g. write data to DynamoDB)
 
 ## The Five Pillars:
