@@ -2,7 +2,7 @@
 #### Compute
 * `EC2` (Elastic Compute Cloud) - Virtual servers
     * `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
-    * `EBC` (Elastic Block Store) - Storage for EC2
+    * `EBS` (Elastic Block Store) - Storage for EC2
     * `AMI` (Amazon Machine Images) - OS + installed software
     * `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
@@ -10,6 +10,7 @@
 * `Amplify` - hosting for fullstack SPA with CI/CD
 * `ECS` (Elastic Container Service) - containers orchestration (alternative to kubernetes)
     * `Fargate` - Serverless compute for containers
+* `EKS` - Kubernetes as a Service
 * `Lightsail` - Servers with sane defaults, fixed price per month
 #### Storage
 * `S3` (Simple Storage Service) - File storage
@@ -30,6 +31,7 @@
 * `OpsWorks` - use code to automate the configurations of your `EC2` servers (via Chef/Puppet)
 * `Marketplace` - pre-packaged images with installed software (e.g. SonarQube, Grafana)
 * `CloudWatch` - Application and Infrastructure Monitoring (Logs, Metrics, Alarms, Dashboards, KPIs)
+* `CloudTrail` - monitor actions across your AWS infrastructure (e.g. who created that `EC2` instance? who deleted DB?)
 * `CodeCommit` - hosted version control (github/gitlab)
 * `CodeDeploy` - deploy code from git to `EC2` instances
 * `CodePipeline` - CI/CD (CircleCI, Travis)

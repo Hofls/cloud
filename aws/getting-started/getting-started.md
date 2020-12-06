@@ -26,3 +26,4 @@
 * Before rolling out your own thing - check `Marketplace`, `Quick Starts` and `Hands on`
 * To check current spending and usage - `Billing & Cost Management Dashboard`
     * To generate overall report - `AWS Cost and Usage Reports`
+* To make sure nothing crazy is happening - periodically review event history in `CloudTrail`
