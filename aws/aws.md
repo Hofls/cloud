@@ -20,7 +20,6 @@
 * `DynamoDB` - Key-value storage (NoSQL)
     * `DocumentDB` - same thing, but with more complexity/control
 * `Elasticache` - in-memory data store (Memcached/Redis)
-* `SQS` (Simple Queue Service) - Message queue (RabbitMQ)
 #### Devops
 * `CloudFormation` - Infrastructure as Code (declarative, high level of abstraction)
     * `Quick Starts` - gold-standard deployment templates
@@ -44,10 +43,19 @@
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
 * `Trusted Advisor` - scans AWS infrastructure, compares it to best practices, and provides recommendations
-### Security, identity
+#### Messages
+* `SQS` (Simple Queue Service) - Message queue (RabbitMQ)
+* `SNS` (Simple Notifications Service) - send notifications to subscribers (e.g. via email/sms/http)
+#### Security, identity
 * `IAM` (Identity and Access Management) - AWS Account management (users, groups, permissions)
 * `Cognito` - Add Sign-up/Sign-in functionality to the app
-### Cost management
+* `Inspector` - security audit for `EC2` instances
+* `WAF` (Web Application Firewall) - Blocks incoming requests, based on rules (e.g. by ip, by content)
+    * Stands in front of API Gateway/ELB/CloudFront
+* `Shield` - DDoS protection. `Route53`/`CloudFront` -> `Shield` -> `VPC`
+* `GuardDuty` - IDS/IPS (Intrusion Detection System / Intrusion Protection System)
+    * e.g. detects when somebody bruteforces password for your `EC2` instance
+#### Cost management
 * `Budgets` - Before costs incurred. Alerts, limits, forecasting
 * `Cost Explorer` - After costs incurred. Reports, visualization
 * `Pricing Calculator` - Estimate the cost for your architecture solution
