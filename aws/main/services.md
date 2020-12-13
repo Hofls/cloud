@@ -8,9 +8,9 @@
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
 * `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
 * `Amplify` - hosting for fullstack SPA with CI/CD
-* `ECS` (Elastic Container Service) - containers orchestration (alternative to kubernetes)
+* `ECS` (Elastic Container Service) - containers orchestration, simple version of `EKS`
     * `Fargate` - Serverless compute for containers
-* `EKS` - Kubernetes as a Service
+* `EKS` (Elastic Kubernetes Service) - Kubernetes as a Service, complex and flexible version of `EKS`
 * `Lightsail` - Servers with sane defaults, fixed price per month
 #### Storage
 * `S3` (Simple Storage Service) - File storage
@@ -49,6 +49,7 @@
 #### Security, identity
 * `IAM` (Identity and Access Management) - AWS Account management (users, groups, permissions)
     * `ARN` (Amazon Resource Names) - identifiers for resources
+* `KMS` (Key Management Service) - create, store, audit usage of cryptographic keys
 * `Cognito` - Add Sign-up/Sign-in functionality to the app
 * `Inspector` - security audit for `EC2` instances
 * `WAF` (Web Application Firewall) - Blocks incoming requests, based on rules (e.g. by ip, by content)
