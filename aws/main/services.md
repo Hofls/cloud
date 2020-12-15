@@ -1,6 +1,6 @@
 ## Services:
 #### Compute
-* `EC2` (Elastic Compute Cloud) - Virtual servers
+* `EC2` (Elastic Compute Cloud) - Virtual private servers (VPS)
     * `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
     * `EBS` (Elastic Block Store) - Storage for EC2
     * `AMI` (Amazon Machine Images) - OS + installed software
@@ -14,6 +14,7 @@
 * `Lightsail` - Servers with sane defaults, fixed price per month
 #### Storage
 * `S3` (Simple Storage Service) - File storage
+    * `S3 Glacier` - low cost file storage with very slow retrieval (usable for backups)
 * `RDS` (Relational Database Service) - Set up, operate, and scale a relational database (Postgres/MySQL)
     * `Aurora` - fully managed alternative (you don't have to admin it)
     * `Aurora Serverless` - only runs when you need it, like Lambda (for bursty workloads that spike frequently)
