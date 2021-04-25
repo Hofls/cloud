@@ -4,17 +4,20 @@
     * `EC2 Spot Instances` - huge discount, but EC2 can reclaim the capacity at any moment. Anything you run here - should be fault-tolerant
     * `EBS` (Elastic Block Store) - Storage for EC2
     * `AMI` (Amazon Machine Images) - OS + installed software
-    * `ELB` (Elastic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
+    * `CLB` (Classic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
+        * Old name - `ELB` (Elastic Load Balancing)
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
 * `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
+    * `Step Functions` - sequence `Lambda` functions, output of one step is input to the next step.
 * `Amplify` - hosting for fullstack SPA with CI/CD
 * `ECS` (Elastic Container Service) - containers orchestration, simple version of `EKS`
     * `Fargate` - Serverless compute for containers
-* `EKS` (Elastic Kubernetes Service) - Kubernetes as a Service, complex and flexible version of `EKS`
+* `EKS` (Elastic Kubernetes Service) - Kubernetes as a Service, complex and flexible version of `ECS`
 * `Lightsail` - Servers with sane defaults, fixed price per month
+* `Batch` - Batch jobs (scheduled, without user interaction)
 #### Storage
 * `S3` (Simple Storage Service) - File storage
-    * `S3 Glacier` - low cost file storage with very slow retrieval (usable for backups)
+    * `S3 Glacier` - low cost file storage with very slow retrieval (3-5 hours). Good for archival purposes
 * `RDS` (Relational Database Service) - Set up, operate, and scale a relational database (Postgres/MySQL)
     * `Aurora` - fully managed alternative (you don't have to admin it)
     * `Aurora Serverless` - only runs when you need it, like Lambda (for bursty workloads that spike frequently)
@@ -39,7 +42,11 @@
 * `Route 53` - DNS + Domains
 * `CloudFront` - CDN (Content Delivery Network)
 * `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
-* `API Gateway` - versioning and routing, rate limiting, API keys
+    * Your resources may interact via LAN, which is faster and safer than internet
+* `API Gateway` - front-end for service APIs. Provides versioning, routing, rate limiting, API keys.
+    * Works with Lambda, Elastic Beanstalk, EC2
+* `ALB` (Application Load Balancer) - (OSI Layer 7. Application)
+* `NLB` (Network Load Balancer) - (OSI Layer 4. Transport)
 #### Analytics
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
@@ -67,3 +74,9 @@
 * `Cloud9` - Online IDE
 * `Honeycode` - Create apps without programming
 * `SDK` - Access AWS services from your app (e.g. write data to DynamoDB)
+
+
+## Good learning resources:
+* [Open Guide](https://github.com/open-guides/og-aws)
+* 
+* 
