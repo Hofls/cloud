@@ -7,7 +7,7 @@
     * `CLB` (Classic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
         * Old name - `ELB` (Elastic Load Balancing)
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
-* `Lambda` - takes care of everything required to run and scale your code, you pay only when code is executing
+* `Lambda` - takes care of everything required to run and scale your code (runs code in response to events, idle time is free)
     * `Step Functions` - sequence `Lambda` functions, output of one step is input to the next step.
 * `Amplify` - hosting for fullstack SPA with CI/CD
 * `ECS` (Elastic Container Service) - containers orchestration, simple version of `EKS`
@@ -43,10 +43,10 @@
 * `CloudFront` - CDN (Content Delivery Network)
 * `VPC` (Virtual Private Cloud) - logical network which you can provision resources into
     * Your resources may interact via LAN, which is faster and safer than internet
-* `API Gateway` - front-end for service APIs. Provides versioning, routing, rate limiting, API keys.
+* `API Gateway` - front door for service APIs. Provides versioning, routing, rate limiting, API keys.
     * Works with Lambda, Elastic Beanstalk, EC2
 * `ALB` (Application Load Balancer) - (OSI Layer 7. Application)
-* `NLB` (Network Load Balancer) - (OSI Layer 4. Transport)
+* `NLB` (Network Load Balancer) - OSI Layer 4. Transport (TCP/UDP, doesn't work with http/https)
 #### Analytics
 * `AWS Cost Explorer` - Visualize, understand, and manage your AWS costs and usage
 * `AWS Cost & Usage Report` - In depth AWS costs and usage
