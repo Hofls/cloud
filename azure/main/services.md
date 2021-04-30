@@ -5,6 +5,7 @@
 * `App Service` - PaaS (run backend in fully managed environment)
 * `Kubernetes services` - managed kubernetes
 * `Service Fabric` - containers orchestration (like kubernetes)
+* `Batch` - big compute
 * `Hosts` - dedicated physical servers
 * `Marketplace` - ready to run solutions (e.g. grafana, postgres)
 
