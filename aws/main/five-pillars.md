@@ -1,4 +1,7 @@
-## The Five Pillars:
+#### Definition
+`Well-Architected Framework’s five pillars` - design principles and best practices
+
+#### The Five Pillars:
 * `Operational Excellence` - continuously improve your ability to run systems, create better procedures, and gain insights
     * Based on automation, because human error is the primary cause of incidents
     * `IaC` (Infrastructure as Code) - infrastructure management via configuration files
