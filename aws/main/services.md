@@ -7,7 +7,7 @@
     * `CLB` (Classic Load Balancing) - distributes incoming application traffic across multiple targets (e.g. EC2 instances), performs health checks
         * Old name - `ELB` (Elastic Load Balancing)
 * `Elastic Beanstalk` (`PaaS`, runs on `EC2`) - installed runtime, configured reverse proxy (80 -> 8080), load balancer, monitoring
-* `Lambda` - takes care of everything required to run and scale your code (runs code in response to events, idle time is free)
+* `Lambda` (FaaS)- takes care of everything required to run and scale your code (runs code in response to events, idle time is free)
     * `Step Functions` - sequence `Lambda` functions, output of one step is input to the next step.
 * `Amplify` - hosting for fullstack SPA with CI/CD
 * `ECS` (Elastic Container Service) - containers orchestration, simple version of `EKS`

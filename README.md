@@ -9,9 +9,8 @@
         * AWS Elastic Beanstalk, Heroku
     * `SaaS` (Software as a Service) - PaaS + service manages data and application (service manages everything)
         * Dropbox, Salesforce
-    * `Serverless` - servers are abstracted away. Not suitable for complex apps. With lots of functions interacting with one another - complexity grows very quickly.
-        * `Function as a Service (FaaS)`
-        *
+    * `FaaS` (Serverless) - servers are abstracted away. Not suitable for complex apps. With lots of functions interacting with one another - complexity grows very quickly.
+        * Azure functions, 
 * Goals for the state of infrastructure:
     * `Visibility` - what services you are using, how you use them. Notifications when somebody makes changes. Detection of misconfigurations and incidents
     * `Automation` - automatically scale solutions, resolve incidents, rollback to previous configurations
@@ -48,16 +47,3 @@
 | Occasional large updates             | Frequent small updates                             |
 | Manual management                    | Automated self-management                          |
 | Snowflake servers                    | Immutable infrastructure                           |
-
-### IaaS vs PaaS
-| Instead of running... | Consider using...      |
-|-----------------------|------------------------|
-| Active Directory      | Azure Active Directory |
-| Elasticsearch         | Azure Search           |
-| Hadoop                | HDInsight              |
-| IIS                   | App Service            |
-| MongoDB               | Cosmos DB              |
-| Redis                 | Azure Cache for Redis  |
-| SQL Server            | Azure SQL Database     |
-| File share            | Azure NetApp Files     |
-[Source](https://docs.microsoft.com/en-us/azure/architecture/guide/design-principles/managed-services)

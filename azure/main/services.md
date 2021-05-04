@@ -1,10 +1,11 @@
 ## Services:
 #### Compute
 * `Virtual Machines`
-* `Functions` - serverless (runs code in response to events, idle time is free)
+* `Functions` - FaaS, serverless (runs code in response to events, idle time is free)
 * `App Service` - PaaS (run backend in fully managed environment)
 * `Kubernetes services` - managed kubernetes
-* `Service Fabric` - containers orchestration (like kubernetes)
+* `Service Fabric` - distributed systems platform (runs on premises and on cloud)
+* `Container Instances` - fastest way to run container on Azure
 * `Batch` - big compute
 * `Hosts` - dedicated physical servers
 * `Marketplace` - ready to run solutions (e.g. grafana, postgres)
