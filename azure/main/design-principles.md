@@ -32,3 +32,41 @@
     * Identify bottlenecks (e.g. backend database)
     * Offload resource-intensive tasks (run them as background jobs)
     * Design for scale in (when instances get removed)
+* `Partition around limits`
+    * Partition a database (Avoid limits on size, data I/O, sessions)
+        * Horizontal - each DB has same schema, but different data (Sharding, e.g. mmorpg servers)
+        * Functional - each DB has unique schema, unique subdomain
+        * Vertical - some weird stuff
+    * Partition a queue (Avoid limits on requests number, connections)
+* `Design for operations`
+    * Make all things observable - write logs, traces
+    * Instrument for monitoring - availability, performance, and system health
+    * Standardize logs and metrics - each microservice should have the same format
+    * Automate management tasks - provisioning, deployment, and monitoring
+    * Treat configuration as code - check them into git
+* `Use managed services (PaaS > IaaS)`
+    * PaaS is simpler, cheaper, on higher level of abstraction
+* `Use the best data store for the job`
+    * Don't use a relational DB for everything (expensive join, schema on write, lock contention)
+    * Consider the type of data 
+        * Transactional data into SQL, JSON into document DB, telemetry into time series DB
+        * Logs into Elasticsearch, Blobs in Azure Blob Storage
+    * Use compensating transactions (when writing data to multiple stores)
+    * Look at bounded contexts (subdomains are natural borders)
+* `Design for evolution` (e.g. use microservices)
+    * Enforce high cohesion and loose coupling (high focus, low interdependency)
+        * Cohesive - service provides functionality that logically belongs together
+        * Loosely coupled - you can change on service, without changing another
+    * Encapsulate domain knowledge (1 service = 1 subdomain)
+    * Use asynchronous messaging (decouple producer from consumer)
+    * Expose open interfaces (rest/graphql)
+    * Abstract infrastructure away from domain logic (e.g. messaging and persistence)
+    * Offload cross-cutting concerns to a separate service (e.g. auth)
+    * Deploy services independently (possible thanks to loose coupling)
+* `Build for the needs of the business`
+    * Every design decision must be justified by a business requirement (e.g. 100k users, each saves documents)
+    * Objectives - RTO, RPO, MTO, SLA, SLO
+    * Model the application around the business domain (e.g. DDD)
+    * Capture both functional (app does right thing) and nonfunctional (app does things well) requirements
+    * Plan for growth (e.g. scaling without major architectural changes)
+    * Manage costs (price of cloud)
