@@ -24,6 +24,15 @@
 * `Strangler Fig` - incrementally modernize legacy system by replacing its parts with new services
 
 ### Messaging
-
+* `Asynchronous Request-Reply`
+    * Client sends request to server, server starts long running operation and returns id, client periodically checks operation status
+* `Claim Check` - send claim check to the messaging platform, store blob on external service
+* `Choreography` - decisions made collectively by each component (alternative to central control)
+* `Competing Consumers` - concurrent consumers process messages from the same channel (first to grab)
+* `Priority Queue` - messages with high priority processed first
+* `Publisher-Subscriber` - publisher produces events, subscriber - consumes
+* `Queue-Based Load Leveling` - queue as a buffer to smooth sudden load
+* `Scheduler Agent Supervisor` - coordinate actions across distributed services
+* `Sequential Convoy` - process messages in strict order
 
 [Source](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-patterns)
