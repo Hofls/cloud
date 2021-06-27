@@ -11,8 +11,11 @@
     * `Step Functions` - sequence `Lambda` functions, output of one step is input to the next step.
 * `Amplify` - hosting for fullstack SPA with CI/CD
 * `ECS` (Elastic Container Service) - containers orchestration, simple version of `EKS`
+    * `AWS Copilot` - sets up `ECS` for you
     * `Fargate` - Serverless compute for containers
 * `EKS` (Elastic Kubernetes Service) - Kubernetes as a Service, complex and flexible version of `ECS`
+* `App Runner` -  takes a container and gives you an endpoint for it
+    * Handles load balancing, autoscaling, and other operations automatically
 * `Lightsail` - Servers with sane defaults, fixed price per month
 * `Batch` - Batch jobs (scheduled, without user interaction)
 #### Storage
@@ -38,6 +41,9 @@
 * `CodeCommit` - hosted version control (github/gitlab)
 * `CodeDeploy` - deploy code from git to `EC2` instances
 * `CodePipeline` - CI/CD (CircleCI, Travis)
+* `Managed services` - Prometheus, Grafana
+* `Systems Manager` - automating operations across a fleet of machines (e.g. install/update software)
+* `Protons` - build reusable templates that developers can use to deploy their services
 #### Networking
 * `Route 53` - DNS + Domains
 * `CloudFront` - CDN (Content Delivery Network)
@@ -71,6 +77,7 @@
 * `Pricing Calculator` - Estimate the cost for your architecture solution
 * `Resource Groups` - check all your resources (EC2 instances, Lambda functions, DynamoDB tables etc)
 #### Development
+* `AppSync` - creates GraphQL API in front of backend sources
 * `Cloud9` - Online IDE
 * `Honeycode` - Create apps without programming
 * `SDK` - Access AWS services from your app (e.g. write data to DynamoDB)
