@@ -1,16 +1,27 @@
+### Quick overview
+* Generic cloud computing platforms
+    * AWS, Azure, GCP, DigitalOcean, Alibaba, Yandex
+* Provides environment to run apps
+    * Heroku
+* Backend as a service
+    * Firebase
+* Hosting for static/serverless web apps
+    * Netlify, Vercel
+
 ### Cloud
 * `Cloud computing` - on-demand delivery of IT resources over the Internet (e.g. computing power, data storage)
     * The main enabling technology for cloud computing is `virtualization` (separates a physical device from virtual devices)
 * Types of computing:
     * `On premises` - you manage everything
     * `IaaS` (Infrastructure as a Service) - service manages networking, storage, servers, virtualization
-        * AWS, DigitalOcean, Azure, GCE
+        * AWS, DigitalOcean, Azure, GCE, Alibaba Cloud
     * `PaaS` (Platform as a Service) - IaaS + service manages OS, middleware, runtime
         * AWS Elastic Beanstalk, Heroku
     * `SaaS` (Software as a Service) - PaaS + service manages data and application (service manages everything)
         * Dropbox, Salesforce
-    * `FaaS` (Serverless) - servers are abstracted away. Not suitable for complex apps. With lots of functions interacting with one another - complexity grows very quickly.
+    * `FaaS` (Serverless) - servers abstracted away. Not suitable for complex apps. With lots of functions interacting with one another - complexity grows very quickly.
         * Azure functions, 
+    * `BaaS` (Backend as a Service) - provides auth, db, hosting, logs, analytics. You can focus on the frontend.
 * Goals for the state of infrastructure:
     * `Visibility` - what services you are using, how you use them. Notifications when somebody makes changes. Detection of misconfigurations and incidents
     * `Automation` - automatically scale solutions, resolve incidents, rollback to previous configurations
