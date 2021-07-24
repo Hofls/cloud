@@ -7,6 +7,8 @@
     * Firebase
 * Hosting for static/serverless web apps
     * Netlify, Vercel
+* Run your own cloud on your hardware
+    * VMware vSphere
 
 ### Cloud
 * `Cloud computing` - on-demand delivery of IT resources over the Internet (e.g. computing power, data storage)
