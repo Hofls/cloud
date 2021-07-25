@@ -1,14 +1,13 @@
 ### Terminology
-* `dyno` - smart container (runtime environment)
+* `Dyno` - smart container (runtime environment)
+    * To scale app - just increase number of dynos
 * `Slug` - app bundle ready for execution on dyno (source code, dependencies, runtime..)
 * `Buildpack` - transforms source code into a Slug 
 * `Addon` - 3rd party service (e.g. managed PostgreSQL)
 * `Button` - run 3rd party app in one click (e.g. hasura, owasp juice shop)
-
-### Products
-* 
-* 
-
+* `DX` - Developer experience. Developers can focus on creating apps, without being distracted by servers/infra
+* `OpEx` - Operational experience. Platform monitors key indicators, provides alerting, autoscaling, logs, metrics
+ 
 ### Commands
 * App:
     * Open app url
