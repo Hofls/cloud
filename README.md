@@ -21,7 +21,8 @@
         * AWS Elastic Beanstalk, Heroku
     * `SaaS` (Software as a Service) - PaaS + service manages data and application (service manages everything)
         * Dropbox, Salesforce
-    * `FaaS` (Serverless) - servers abstracted away. Not suitable for complex apps. With lots of functions interacting with one another - complexity grows very quickly.
+    * `FaaS` (Function as a Service), aka Serverless - servers abstracted away. 
+        * Not suitable for complex apps. With lots of functions interacting with one another - complexity grows very quickly.
         * Azure functions, 
     * `BaaS` (Backend as a Service) - provides auth, db, hosting, logs, analytics. You can focus on the frontend.
 * Goals for the state of infrastructure:
