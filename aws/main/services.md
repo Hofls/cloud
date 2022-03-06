@@ -31,7 +31,7 @@
 * `CloudFormation` - Infrastructure as Code (declarative, high level of abstraction)
     * `Quick Starts` - gold-standard deployment templates
     * Alternatives:
-        * `CDK` (Cloud Development Kit) - abstraction on top of CloudFormation
+        * `CDK` (Cloud Development Kit) - write code that will manage infrastructure (produces CloudFormation templates)
         * `CLI` - imperative, low level of abstraction
         * `Terraform`
 * `OpsWorks` - use code to automate the configurations of your `EC2` servers (via Chef/Puppet)
