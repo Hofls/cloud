@@ -3,6 +3,7 @@
     * Not obvious choices:
         * `Type` - NEW
         * `Boot Image` - Ubuntu.iso
+            * If no such image in list - add it manually (Libraries -> Media & Other -> Add)
         * `Size` - Custom sizing options
         * `Storage Policy` - VM default
         * `Network` - (copy from any VM)
