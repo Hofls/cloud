@@ -26,3 +26,4 @@
         * Unpick `Set up this disk as an LVM group`
             * With default LVM group only small amount of space will be available 
     * Install OpenSSH server
+    * If security update takes too long - its OK to cancel and reboot
