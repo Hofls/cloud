@@ -1,0 +1,15 @@
+### Info
+* `Firebase` - app development platform (Backend-as-a-Service)
+* Interfaces - console (gui), CLI, REST API
+* Uses GCP behind the scenes
+
+### Products
+* `Firestore` - NoSQL cloud database
+* `Cloud Functions` - run backend code, without managing servers
+* `Authentication` - ready-to-use auth system, sign-in with any platform
+* `Hosting` - serve frontend (e.g. SPA) via CDN edge servers
+* `Cloud Storage` - store and server user content (e.g. photos/videos)
+* `Remote Config` - feature flags (safely roll out new features, run a/b tests)
+* `Cloud Messaging` - send notifications to users
+* `Firebase ML` - train and deploy models
+* `Google Analytics`, `Performance Monitoring`, `Crashlytics`
