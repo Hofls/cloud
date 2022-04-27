@@ -1,6 +1,7 @@
 ### Info
 * `Firebase` - app development platform (Backend-as-a-Service)
-* Interfaces - console (gui), CLI, REST API
+* Use cases:
+    * Firebase takes care of backend, while you focus on developing frontend
 * Uses GCP behind the scenes
 
 ### Products
