@@ -1,5 +1,7 @@
-### Create new VM
-* Open `VMware Cloud Director` -> Data Centers -> Virtual Machines -> NEW VM
+### Create VM, install OS
+* Create VM
+    * Open `VMware Cloud Director` -> Data Centers -> Virtual Machines -> NEW VM
+        * Or Data centers -> vApps -> Actions -> Add -> Add VM
     * Not obvious choices:
         * `Type` - NEW
         * `Boot Image` - Ubuntu.iso
