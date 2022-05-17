@@ -1,4 +1,4 @@
-### Create VM, install OS
+### Create VM, install OS (Linux)
 * Create VM
     * Open `VMware Cloud Director` -> Data Centers -> Virtual Machines -> NEW VM
         * Or Data centers -> vApps -> Actions -> Add -> Add VM
@@ -29,3 +29,16 @@
             * With default LVM group only small amount of space will be available 
     * Install OpenSSH server
     * If security update takes too long - its OK to cancel and reboot
+
+### Install, configure Windows
+* Create VM (same as Linux, only difference is image - pick Microsoft Windows Server)
+* Configure:
+    * Disable Firewall
+    * `Server Manager` -> `Local Server` -> `Remote Desktop` -> `Enabled`
+    * `Network & Internet Settings` -> `Change adapter settings` -> `Ethernet` -> `Options` -> `Internet Protocol Version 4 (TCP/IPv4)` -> `Properties`
+        * Fill same as for linux:
+            * `Use the following IP address:`
+            * `Use the following DNS server addresses:`
+    * After connecting to the network - question appears `Allow PC to be discoverable on this network?`, press `Yes`
+* Test:
+    * Ping VM, connect via RDP
