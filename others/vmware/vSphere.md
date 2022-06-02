@@ -42,3 +42,12 @@
     * After connecting to the network - question appears `Allow PC to be discoverable on this network?`, press `Yes`
 * Test:
     * Ping VM, connect via RDP
+
+### Edit existing VM:
+* Edit RAM/CPU:
+    * Turn off VM 
+    * Compute -> Memory/CPU -> Edit
+    * Turn on VM
+* Edit Disk size:
+    * TODO, should be harder than RAM/CPU
+* 
