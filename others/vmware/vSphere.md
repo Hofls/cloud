@@ -18,10 +18,12 @@
     * Configure network interface (DNS, Gateway, Search...)
         * Simple way - look at the existing config in another VM, e.g. for CentOS - `nmtui`
         * Example:
-            * Subnet - 24.232.21.0/24
+            * Subnet - 24.232.21.0/24 (Based on VM ip address + mask)
+                * AKA "Netmask = 24"
             * Address - 24.232.21.77 (VM ip address)
-            * Gateway - 24.232.21.1 (from `nmtui`)
-            * Name servers - 24.232.5.2, 24.232.5.3 (from `nmtui`)
+            * Gateway - 24.232.21.1 (Based on VM ip address)
+            * Name servers - 17.112.5.2, 17.112.5.3 (from `nmtui`)
+                * AKA "DNS servers"
             * Search domains - sun.lan (from `nmtui`)
     * Storage configuration:
         * Pick `Use an entire disk`
@@ -50,4 +52,10 @@
     * Turn on VM
 * Edit Disk size:
     * TODO, should be harder than RAM/CPU
-* 
+* Edit network:
+    * Turn off VM
+    * Hardware -> NICs -> Edit -> Change Network -> Save
+    * Turn on VM
+    * All Actions -> VM Console -> Launch Web Console
+    * `nmtui` -> Edit -> Update subnet, address and gateway (based on new IP adddress)
+    * `reboot`
