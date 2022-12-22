@@ -59,3 +59,11 @@
     * All Actions -> VM Console -> Launch Web Console
     * `nmtui` -> Edit -> Update subnet, address and gateway (based on new IP adddress)
     * `reboot`
+
+### Edit VM IP address:
+* CentOS - `nmtui`
+* Ubuntu:
+    * `ip a` - should show old IP address
+    * `nano /etc/netplan/*.yaml` - eit same parameters as in `nmtui`
+    * `netplan apply`
+    * `ip a` - should show new IP address
